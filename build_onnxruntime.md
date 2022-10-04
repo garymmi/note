@@ -5,10 +5,11 @@
 
 > $ cd onnxruntime
 
-> $ ./build.sh --config MinSizeRel --build_shared_lib --parallel  --osx_arch arm64 --build_wheel
+> $ ./build.sh --config MinSizeRel --build_shared_lib --parallel --osx_arch arm64 --build_wheel
 
 ## convert models from onnx to ort format
-> $ pip3 install onnxruntime onnx
+> $ pip3 install ./build/MacOS/Release/dist/onnxruntime-1.13.0-cp310-cp310-macosx_12_0_arm64.whl
+> $ pip3 install onnx
 
 > $ python3  -m onnxruntime.tools.convert_onnx_models_to_ort models/
 
