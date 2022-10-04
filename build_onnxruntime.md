@@ -10,7 +10,6 @@
 ## convert models from onnx to ort format
 > $ pip3 install ./build/MacOS/Release/dist/onnxruntime-1.13.0-cp310-cp310-macosx_12_0_arm64.whl
 > $ pip3 install onnx
-
 > $ python3  -m onnxruntime.tools.convert_onnx_models_to_ort models/
 
 ## for Iphone Simulator
