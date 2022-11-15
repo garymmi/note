@@ -15,4 +15,7 @@
 > $ python3 -m onnxruntime.tools.convert_onnx_models_to_ort models/
 
 ## for Iphone Simulator
-> $ ./build.sh --config Release --use_xcode --ios --ios_sysroot iphonesimulator --osx_arch arm64 --apple_deploy_target 13.0 --disable_exceptions --include_ops_by_config ~/models/required_operators.config --skip_tests
+> $ ./build.sh --config Release --use_xcode --ios --ios_sysroot iphonesimulator --osx_arch arm64 --apple_deploy_target 11.0 --disable_exceptions --include_ops_by_config ~/models/required_operators.config --skip_tests
+
+## for Iphone device
+> $ ./build.sh --config Release --use_xcode --ios --ios_sysroot iphoneos --osx_arch arm64 --apple_deploy_target 11.0 --disable_exceptions --include_ops_by_config ~/models/required_operators.config --skip_tests --cmake_extra_defines onnxruntime_ENABLE_BITCODE=ON
